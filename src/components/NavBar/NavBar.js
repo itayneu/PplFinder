@@ -5,7 +5,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
 const NavBar = () => {
-  const [value, setValue] = useLocalStorage(0);
+  const [value, setValue] = useLocalStorage("navbar tab", 0);
 
   const handleChange = (_e, newValue) => {
     setValue(newValue);

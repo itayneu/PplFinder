@@ -124,7 +124,6 @@ const UserList = ({ page, users, isLoading, hasMore, setPageNumber }) => {
         <Button label="show distance from your location" variant="contained" onClick={handleGetLocation}/>
       </S.Button>
       {renderDistanceUnits()}
-      
       <S.List>
         {users?.map((user, index) => {
           const userFavoritesIndex = findIndex(favorites, user);
