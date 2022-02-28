@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+import { useLocalStorage } from "hooks";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
 const NavBar = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useLocalStorage(0);
 
   const handleChange = (_e, newValue) => {
     setValue(newValue);
@@ -19,8 +20,8 @@ const NavBar = () => {
         indicatorColor="primary"
         textColor="primary"
       >
-        <Tab label="Home" index={0} />
-        <Tab label="Favorites" index={1} />
+        <Tab label="Home" index={0} href="/" />
+        <Tab label="Favorites" index={1} href="/#/favorites" />
       </Tabs>
     </AppBar>
   );

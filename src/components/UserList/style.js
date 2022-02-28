@@ -40,6 +40,16 @@ export const SpinnerWrapper = styled.div`
   justify-content: center;
 `;
 
+export const Button = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const RadioButtonsGroup = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const IconButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
